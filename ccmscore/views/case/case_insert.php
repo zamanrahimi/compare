@@ -1,4 +1,37 @@
 <?php
+/* Classification   : CCMS
+Title#            : Registeration number and date plus registeration fees added
+Zendesk#          : 3789 (https://jsspcms.zendesk.com/agent/tickets/3789)
+comment          
+05.10.2020        : Mohammad Fekrat line 143 till line 168 added 
+05.10.2020        : Mohammad Fekrat line 228 till line 254 added 
+05.10.2020        : Mohammad Fekrat line 300 till line 309 added 
+05.10.2020        : Mohammad Fekrat  line 345 till line 374 added 
+*/ 
+/* Classification   : CCMS
+Title#            : adding another dependent drop-down to court-decision 
+Zendesk#          : 4007 (https://jsspcms.zendesk.com/agent/tickets/4007)
+comment           : in line 1046 court decision class added 
+26.10.2020        : Mohammad Fekrat line 1051 till line 1063 added 
+26.10.2020        : Mohammad Fekrat line 1263 till line 1275 added 
+26.10.2020        : Mohammad Fekrat line 1547 till line 1556 added 
+*/ 
+/* Classification   : CCMS
+Title#            : ٔTo add the 
+‘Received Date to the Huqooq Department:’ , 
+‘Issuance Date from Huqooq Department:’
+ ‘Sender:’ 
+and 
+‘Receiver:’ and 'Type:'  options under Civil CMS while adding and editing a new case under state cases.
+ 
+Zendesk#          : 3884 (https://jsspcms.zendesk.com/agent/tickets/3884)
+comment          
+10.10.2020        : Sultan Ali-line 76 to 109 added 
+
+*/ 
+
+?>
+<?php
 $ftitle = "";
 if($dtype == "2")
 {
@@ -39,10 +72,42 @@ echo "<input type=\"hidden\" name=\"timestamp\" id=\"timestamp\" value=\"".strto
                      </div> 
                      <strong><?=lang('case_province')?>:</strong>
                        <div class="txbox_div">
-                             <select name="n_province" id="n_province" class="selectbox" style="width: 250px;" onchange="javascript: get_provincedeps('<?=base_url()?>case/home/getprovinceorganization2','n_ministry','n_province','minid','prid','departmentid','&');provinceCode('n_province');validate_all('case_form');getDepsProvinceSenderReciver('<?=base_url()?>case/home/getDepsProvinceSenderReciver','n_province','prid','senderDiv','receiverDiv','&'); ">
-                               <option value="" selected="selected"><?=$this->lang->line('select_province')?></option>
-                              <?=$province?>
-                           </select>
+  <!--3884----start--------added condition if dtype =Law else -------------------->
+        <?php
+          if ($dtype==1)
+        {
+
+        ?>
+         <select name="n_province" id="n_province" class="selectbox" style="width: 250px;" onchange="javascript: get_provincedeps('<?=base_url()?>case/home/getprovinceorganization2','n_ministry','n_province','minid','prid','departmentid','&');provinceCode('n_province');validate_all('case_form');
+              getDepsProvinceSenderReciver('<?=base_url()?>case/home/getDepsProvinceSenderReciver','n_province','prid','senderDiv','receiverDiv','&'); 
+              ">
+             <option value="" selected="selected"><?=$this->lang->line('select_province')?></option>
+              <?=$province?>
+          </select>
+        <?php
+            
+        }
+
+        else 
+
+        {
+                
+        ?>
+           
+<select name="n_province" id="n_province" class="selectbox" style="width: 250px;" onchange="javascript: get_provincedeps('<?=base_url()?>case/home/getprovinceorganization2','n_ministry','n_province','minid','prid','departmentid','&');provinceCode('n_province');validate_all('case_form');
+
+              getDepsProvinceSenderReciver('<?=base_url()?>case/home/getDepsProvinceSenderReciver3','n_province','prid','senderDiv3','receiverDiv3','&'); 
+              ">
+             <option value="" selected="selected"><?=$this->lang->line('select_province')?></option>
+              <?=$province?>
+          </select>
+
+        <?php
+
+        }
+
+        ?>
+<!--3884----end--------added condition if dtype =Law else -------------------->
                         <img id="n_provinceIMG" src="<?=base_url()?>images/validationx.PNG" width="19" height="19" style="position:relative; top:4px"/>
                       </div>     
                       <img src="<?=base_url()?>images/case_list.png" style="position:relative; top:3px"/>&nbsp;<strong><?=lang('case_department')?>:</strong>
@@ -95,75 +160,12 @@ echo "<input type=\"hidden\" name=\"timestamp\" id=\"timestamp\" value=\"".strto
     ?>
     <tr>
         <td class="tdstyle txtlabel"  colspan="4" style="background-color: green;color: white" align="center">
-
-
-<!-- start of 4465 -->
-         <strong><?=lang('f_requesttype')?>xxxxxx:</strong>
-          <select name="n_request_type" id="n_request_type" class="selectbox country" style="width: 250px;" onchange="displayDivs('n_request_type');validate_all('case_form')">
-               <option value="0"  selected="selected"><?=$this->lang->line("f_select")?></option>
+         <strong><?=lang('f_requesttype')?>:</strong>
+          <select name="n_request_type" id="n_request_type" class="selectbox" style="width: 250px;" onchange="displayDivs('n_request_type');validate_all('case_form')">
+               <option value=""  selected="selected"><?=$this->lang->line("f_select")?></option>
                <?=$request_type?>
             </select>
             <img id="n_request_typeIMG" src="<?=base_url()?>images/validationx.PNG" width="19" height="19" style="position:relative; top:4px"/>
-
-
-
-
-<script>
-$(document).ready(function(){
-
-
-$('#n_request_type').change(function() {
-                // console.log($('option').val())
-                // civil 
-                  if ($(this).val() ==6) {
-                    $('#fd5').show();
-                  } else {
-                    $('#fd5').hide();
-                  }
-                // admin and finance 
-                 if ($(this).val() ==5) {
-                    $('#fd6').show();
-                  } else {
-                    $('#fd6').hide();
-                  }
-
-
-});
-
-
-
-
- $('.country').change(function(){
-  var country_id1 = $('.country').val();
-  if(country_id1 != '')
-  {
-   $.ajax({
-    // url:"<?php echo base_url(); ?>dynamic_dependent/fetch_state",
-    url:"http://localhost/ccms/case/home/fetch_state",
-    method:"POST",
-    data:{country_id1:country_id1},
-    success:function(data)
-    {
-     $('#state').html(data);
-    }
-   });
-  }
-  else
-  {
-   $('#state').html('<option value=""></option>');
-
-  }
- });
-
-
-
-// end line 
-});
-</script>
-
-
-<!-- end of 4465 -->
-
         </td>     
     </tr>
     <tr>
@@ -187,13 +189,39 @@ $('#n_request_type').change(function() {
                                 <div class="txbox_div">
                                    <textarea name="area" id="area" cols="25" rows="5"/></textarea>
                                  </div>
-                                
+
                         </td>
                         <td class="tdstyle txtlabel" width="25%" valign="top">
                              <strong><?=lang('f_type')?>:</strong>
                                 <div class="txbox_div">
                                    <input type="text" name="type" id="type" value="" class="textbox" size="24"/> 
                                </div>
+                 <?php /*  Request # 3789  (2020-10-05) (Line) - Changes start here*/ ?>
+                            <?php if($dtype == "1") { ?>
+                            <strong><?=lang('reg_fee')?>:</strong>
+                             <div class="txbox_div">
+                             <select name="reg_feesa" id="reg_feesa" style="width:230px" class="selectbox" />
+                             <option value="" selected="selected"><?=$this->lang->line('det_select_rega')?></option>
+                                 </select>
+                                </div>
+                               <strong><?=lang('per_bankrec')?>:</strong>
+                               <div class="txbox_div">
+                               <input type="text" name="bankreca" id="bankreca" value="" class="textbox" size="24" />
+                               </div>
+                               <strong><?=lang('per_bankrecdate')?>:</strong>
+                               <div class="txbox_div">
+                              <select id="brdaya" name="brdaya" class="selectbox" style="width:50px" >
+                              <?=$b_day?>   
+                               </select> /
+                               <select id="brmontha" name="brmontha" class="selectbox" style="width:70px">
+                               <?=$b_month?>    
+                              </select>/
+                              <select id="bryeara" name="bryeara" class="selectbox" style="width:60px">
+                              <?=$b_year?>  
+                              </select> 
+                              </div>
+                              <?php   } ?>
+                 <?php /*  Request # 3789  (2020-10-05) (Line) - Changes end here*/ ?>
                         </td>
                         <td class="tdstyle txtlabel" width="25%">     
                        
@@ -229,7 +257,6 @@ $('#n_request_type').change(function() {
                    </tr>
                    </table>
             </div>
-
             <div id="fd2" style="display: none;">
                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
                       <tr>
@@ -254,6 +281,33 @@ $('#n_request_type').change(function() {
                                 <div class="txbox_div">
                                    <input type="text" name="btype" id="btype" value="" class="textbox" size="24"/> 
                                </div>
+                 <?php /*  Request # 3789  (2020-10-05) (Line) - Changes start here*/ ?>
+                            <?php if($dtype == "1") { ?>
+
+                             <strong><?=lang('reg_fee')?>:</strong>
+                             <div class="txbox_div">
+                             <select name="reg_feesb" id="reg_feesb" style="width:230px" class="selectbox" />
+                             <option value="" selected="selected"><?=$this->lang->line('det_select_regb')?></option>
+                                    </select>
+                                </div>
+                               <strong><?=lang('per_bankrec')?>:</strong>
+                               <div class="txbox_div">
+                               <input type="text" name="bankrecb" id="bankrecb" value="" class="textbox" size="24" />
+                               </div>
+                               <strong><?=lang('per_bankrecdate')?>:</strong>
+                               <div class="txbox_div">
+                              <select id="brdayb" name="brdayb" class="selectbox" style="width:50px" >
+                              <?=$b_day?>   
+                               </select> /
+                               <select id="brmonthb" name="brmonthb" class="selectbox" style="width:70px">
+                               <?=$b_month?>    
+                              </select>/
+                              <select id="bryearb" name="bryearb" class="selectbox" style="width:60px">
+                              <?=$b_year?>  
+                              </select> 
+                              </div>
+                              <?php  } ?>
+                 <?php /*  Request # 3789  (2020-10-05) (Line) - Changes end here*/ ?>
                         </td>
                         <td class="tdstyle txtlabel" width="25%">     
                        
@@ -289,7 +343,7 @@ $('#n_request_type').change(function() {
                       </tr>
                    </table>
             </div>
-            
+
             <div id="fd3" style="display: none;">
                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
                       <tr>
@@ -298,6 +352,17 @@ $('#n_request_type').change(function() {
                                 <div class="txbox_div">
                                 <input type="text" name="disengage" id="disengage" value="" class="textbox" size="24"/>
                                </div>
+
+                 <?php /*  Request # 3789  (2020-10-05) (Line) - Changes start here*/ ?>
+                                    <?php if($dtype == "1") { ?>
+                            <strong><?=lang('reg_fee')?>:</strong>
+                             <div class="txbox_div">
+                             <select name="reg_feesc" id="reg_feesc" style="width:230px" class="selectbox" />
+                             <option value="" selected="selected"><?=$this->lang->line('det_select_regc')?></option>
+                                    </select>
+                                </div>
+                                    <?php    } ?>
+                 <?php /*  Request # 3789  (2020-10-05) (Line) - Changes end here*/ ?>
                         </td>     
                         <td class="tdstyle txtlabel" width="25%" valign="top">
                              <strong><?=lang('f_divorse')?>:</strong>
@@ -332,28 +397,42 @@ $('#n_request_type').change(function() {
                                 <div class="txbox_div">
                                    <textarea name="other_legal_issue" id="other_legal_issue" cols="35" rows="3"/></textarea>
                                  </div>
-                        </td>     
+                        </td> 
+                 <?php /*  Request # 3789  (2020-10-05) (Line) - Changes start here*/ ?>
+                            <?php if($dtype == "1") { ?>
+                        <td class="tdstyle txtlabel" width="30%" valign="top">
+                          <strong><?=lang('reg_fee')?>:</strong>
+                             <div class="txbox_div">
+                             <select name="reg_feesd" id="reg_feesd" style="width:230px" class="selectbox" />
+                             <option value="" selected="selected"><?=$this->lang->line('det_select')?></option>
+                                  <?=$registeration_fees?>            
+                                    </select>
+                                </div>
+                                <strong><?=lang('per_bankrec')?>:</strong>
+                               <div class="txbox_div">
+                               <input type="text" name="bankrecd" id="bankrecd" value="" class="textbox" size="24" />
+                               </div>
+                               <strong><?=lang('per_bankrecdate')?>:</strong>
+                               <div class="txbox_div">
+                              <select id="brdayd" name="brdayd" class="selectbox" style="width:50px" >
+                              <?=$b_day?>   
+                               </select> /
+                               <select id="brmonthd" name="brmonthd" class="selectbox" style="width:70px">
+                               <?=$b_month?>    
+                              </select>/
+                              <select id="bryeard" name="bryeard" class="selectbox" style="width:60px">
+                              <?=$b_year?>  
+                              </select> 
+                              </div>
+
+                        </td>
+                        <?php   } ?>
+                 <?php /*  Request # 3789  (2020-10-05) (Line) - Changes end here*/ ?>
                       </tr>
                    </table>
             </div>
-
-            <div id="fd5" style="display: none;">Civil
-            </div>
-            <div id="fd6" style="display: none;">Aadmin 
-            </div>
-            
-
-<!-- start of 4465 -->
-<strong><?=$this->lang->line('det_crimetype')?>:</strong>
-          <div class="txbox_div">
-           <select name="crimetypes[]" id="state" style="width:300px" class="shortenedSelect crimetypes1" multiple="multiple" size="12">
-
-            <option value=""></option>
-           </select>
-          </div>
-<!-- end of 4465 -->
-        </td> 
-
+     
+        </td>     
     </tr>
     <tr>
         <td class="tdstyle txtlabel"  colspan="4" style="background-color: green; color: white" align="center">
@@ -536,24 +615,12 @@ $('#n_request_type').change(function() {
     </tr>
     <tr>
         <td class="tdstyle txtlabel" valign="top">
-
-
- 
-<?php 
-// 4465 this is tagged!
-/*
-        <strong><?=$this->lang->line('det_crimetype')?>ffffffffff:</strong>
+        <strong><?=$this->lang->line('det_crimetype')?>:</strong>
             <div class="txbox_div">
-             <select name="crimetypes[]" id="crimetypes[]" style="width:300px" class="shortenedSelect crimetypes1" multiple="multiple" size="12"/> 
-               <option value="1" selected="selected"><?=$this->lang->line('det_select')?></option> 
+             <select name="crimetypes[]" id="crimetypes[]" style="width:300px" class="shortenedSelect" multiple="multiple" size="12"/> 
+               <option value="-1" selected="selected"><?=$this->lang->line('det_select')?></option> 
                   <?=$crime?>
               </select> 
-        */    
-?>
-
-
-
-
            </div>
            <span class="fonttxt10"><?=$this->lang->line('det_keyhelp');?></span>
         </td>     
@@ -1024,12 +1091,26 @@ if($dtype == "2")
            </div>
            <strong><?=lang('court_dec')?>:</strong>
            <div class="txbox_div" id="courtDiv">
-              <select name="n_gpr_court_dec[]" id="n_gpr_court_dec" class="selectbox" style="width: 200px" onchange="javascript: validate_all('case_form');" >
+               <select name="n_gpr_court_dec[]" id="n_gpr_court_dec" class="selectbox court_decision" style="width: 200px" onchange="javascript: validate_all('case_form');javascript:next_drop()" >
                   <option value=""><?=lang('g_selectopt')?></option>
                    <?=$court_dec?>
               </select>
               <img id="n_gpr_court_decIMG" src="<?=base_url()?>images/validationx.PNG" width="19" height="19" style="position:relative; top:4px"/>
+           <?php   /*   ticket 4007  start ----------- */ ?>
+               <div style="height:50px; padding-top: 10px">
+                <span class="showcontent" style="display:none;">
+                <strong><?=lang('court_dec_nxt')?>:</strong>
+                <div class="txbox_div" id="courtDiv">
+              <select name="court_dec_next[]" id="court_dec_next[]" class="selectbox"   style="width: 200px"  >
+                  <option value=""><?=lang('g_selectopt')?></option>
+                   <?=$court_dec_oth?>
+              </select>
+              </div>                
+            </span>
+                </div>
+           <?php   /*   ticket 4007  end ----------- */ ?>
            </div> 
+            
         </td>
         
     </tr>
@@ -1221,12 +1302,25 @@ if($dtype == "2")
            </div>
            <strong><?=lang('court_dec')?>:</strong>
            <div class="txbox_div" id="courtDiv">
-              <select name="n_app_court_dec[]" id="n_app_court_dec" class="selectbox" style="width: 200px" onchange="javascript: validate_all('case_form');" >
+              <select name="n_app_court_dec[]" id="n_app_court_dec" class="selectbox court_decision" style="width: 200px" onchange="javascript: validate_all('case_form');javascript:next_drop()" >
                   <option value=""><?=lang('g_selectopt')?></option>
                    <?=$court_dec?>
               </select>
               <img id="n_app_court_decIMG" src="<?=base_url()?>images/validationx.PNG" width="19" height="19" style="position:relative; top:4px"/>
            </div> 
+           <?php   /*   ticket 4007  start ----------- */ ?>
+               <div style="height:50px; padding-top: 10px">
+                <span class="showcontent" style="display:none;">
+                <strong><?=lang('court_dec_nxt')?>:</strong>
+                <div class="txbox_div" id="courtDiv">
+              <select name="court_app_next" id="court_app_next" class="selectbox"   style="width: 200px"  >
+                  <option value=""><?=lang('g_selectopt')?></option>
+                   <?=$court_dec_oth?>
+              </select>
+              </div>                
+            </span>
+                </div>
+           <?php   /*   ticket 4007  end ----------- */ ?>
            
              
         </td>
@@ -1497,14 +1591,16 @@ if($dtype == "2")
         $(element).parent().next().css("display", "none");
         }
     }
-    //validate_all('addimp');  
-  
+    //validate_all('addimp'); 
+    
+<?php   /*   ticket 4007  start ----------- */ ?> 
+function next_drop(){
+var selectedopt = $('.court_decision').find(":selected").val();
+ if (selectedopt == 301) {
+        $('.showcontent').show();
+          } else {
+        $('.showcontent').hide();
+    }
+}
+<?php   /*   ticket 4007  end ----------- */ ?>
 </script>
-
-
-
-
-
-
-
-<!-- added by zaman -->

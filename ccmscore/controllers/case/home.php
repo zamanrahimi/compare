@@ -7,6 +7,115 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
 25.11.2019        :if changed to else if on line 4042 to remove duplicate 'Other' option in the Case subject dropdown.
 */
 
+/* Classification   : CCMS
+Title#            : Defense Lawyer information
+Zendesk#          : 3183 (https://jsspcms.zendesk.com/agent/tickets/3183)
+comment          
+15.08.2020        : line 2934 to 3088 added for getting Districts and villages drop down in report
+
+*/
+/* Classification   : CCMS
+Title#            : Rulling type drop down
+Zendesk#          : 3739 (https://jsspcms.zendesk.com/agent/tickets/3739)
+comment          
+26.09.2020        : Mohammad Fekrat line 847 to 859 added for getting the drop-down value from static table
+26.09.2020        : Mohammad Fekrat line 1218 to 1220 added for inserting the value to base table 
+26.09.2020        : Mohammad Fekrat line 4242 to 4265 added for getting the drop-down value from static table in edit page
+26.09.2020        : Mohammad Fekrat line 4887 to 4889 added for update the value to base table 
+26.09.2020        : Mohammad Fekrat line 1221 has been commented in order this field is not required to be inserted 
+26.09.2020        : Mohammad Fekrat line 4886 has been commented in order this field is not required to be updated
+*/
+/* Classification   : CCMS
+Title#            : ٔNumber of papers 
+Zendesk#          : 3775 (https://jsspcms.zendesk.com/agent/tickets/3775)
+comment          
+27.09.2020        : line 783 added 
+27.09.2020        : line 1224 added
+27.09.2020        : line 3826 added 
+27.09.2020        : line 4900 added
+
+*/
+/* Classification   : CCMS
+Title#            : ٔto add other Department text field under law and state cases 
+Zendesk#          : 3809 (https://jsspcms.zendesk.com/agent/tickets/3809)
+comment          
+29.09.2020        :Sultan Ali- line 796 added 
+29.09.2020        : line 1240 added
+29.09.2020        : line 3845 added 
+29.09.2020        : line 4922 added
+
+*/
+/* Classification   : CCMS
+Title#            : Registeration number and date plus registeration fees added
+Zendesk#          : 3789 and 3866 (https://jsspcms.zendesk.com/agent/tickets/3789 and 3866)
+comment          
+05.10.2020        : Mohammad Fekrat line 761 to 769 added 
+05.10.2020        : Mohammad Fekrat line 933 to 945 added 
+05.10.2020        : Mohammad Fekrat line 1156 to 1160 added 
+05.10.2020        : Mohammad Fekrat line 1195 to 1208 added 
+05.10.2020        : Mohammad Fekrat line 1224 to 1235 added 
+05.10.2020        : Mohammad Fekrat line 3869 to 3877 added 
+05.10.2020        : Mohammad Fekrat line 4062 to 4118 added 
+05.10.2020        : Mohammad Fekrat line 4445 to 4468 added 
+05.10.2020        : Mohammad Fekrat line 4985 to 4989 added 
+05.10.2020        : Mohammad Fekrat line 4995 to 5008 added 
+05.10.2020        : Mohammad Fekrat line 5022 to 5033 added 
+05.10.2020        : Mohammad Fekrat line 893 to 900 added for ticket 3866 
+*/
+/* Classification   : CCMS
+Title#            : adding another dependent drop-down to court-decision 
+Zendesk#          : 4007 (https://jsspcms.zendesk.com/agent/tickets/4007)
+comment          
+26.10.2020        : Mohammad Fekrat line 1084 till line 1095 added 
+26.10.2020        : Mohammad Fekrat line 1501 till line 1503 added 
+26.10.2020        : Mohammad Fekrat line 1556 till line 1558 added 
+26.10.2020        : Mohammad Fekrat line 1607 till line 1609 added 
+26.10.2020        : Mohammad Fekrat line 1660 till line 1662 added 
+26.10.2020        : Mohammad Fekrat line 5343 till line 5365 added 
+26.10.2020        : Mohammad Fekrat line 5642 till line 5644 added 
+26.10.2020        : Mohammad Fekrat line 5706 till line 5708 added 
+26.10.2020        : Mohammad Fekrat line 5822 till line 5833 added 
+26.10.2020        : Mohammad Fekrat line 5932 till line 5934 added 
+26.10.2020        : Mohammad Fekrat line 5996 till line 5998 added 
+*/
+/* Classification   : CCMS
+Title#            : ٔTo add the 
+‘Received Date to the Huqooq Department:’ , 
+‘Issuance Date from Huqooq Department:’
+ ‘Sender:’ 
+and 
+‘Receiver:’  options under Civil CMS while adding and editing a new case under state cases.
+ 
+Zendesk#          : 3884 (https://jsspcms.zendesk.com/agent/tickets/3884)
+comment          
+02.11.2020        : Sultan Ali-line 878 to 881 added 
+02.11.2020        : line 1261 to 1262 added
+02.11.2020        : line 1412 to 1417 added 
+02.11.2020        : line 4049 to 4052 added
+02.11.2020        : line 4320 to 4354 added 
+02.11.2020        : line 5089 to 5109 added
+02.11.2020        : line 5187 to 5188 added 
+02.11.2020        : line 5335 to 5340 added
+02.11.2020        : line 8059 to 8099 added 
+
+
+*/
+
+/* Classification   : CCMS
+Title#            : ٔTo add the 
+‘Type:’  options under Civil CMS while adding and editing a new case under state cases.
+ 
+Zendesk#          : 3883 (https://jsspcms.zendesk.com/agent/tickets/3883)
+comment          
+02.11.2020        : Sultan Ali-line 884 added 
+02.11.2020        : line 1078 to 1088 added
+02.11.2020        : line 1420 added 
+02.11.2020        : line 4055 added 
+02.11.2020        : line 4631 to 4653 added 
+02.11.2020        : line 5343 added 
+
+*/
+
    /*
      Case Controller
      version: 2.0 
@@ -701,7 +810,16 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                     $this->form_validation->set_rules('area',"", 'trim');     
                     $this->form_validation->set_rules('type',"", 'trim');     
                     $this->form_validation->set_rules('transf',"", 'trim');     
-                    $this->form_validation->set_rules('bprice',"", 'trim');     
+                    $this->form_validation->set_rules('bprice',"", 'trim');   
+               /* Request # 3789  (2020-10-05) (Line) - Changes start here */
+                    $this->form_validation->set_rules('reg_feesa',"", 'trim');  
+                    $this->form_validation->set_rules('bankreca',"", 'trim');     
+                    $this->form_validation->set_rules('reg_feesb',"", 'trim');     
+                    $this->form_validation->set_rules('bankrecb',"", 'trim');     
+                    $this->form_validation->set_rules('reg_feesc',"", 'trim');     
+                    $this->form_validation->set_rules('reg_feesd',"", 'trim');  
+                    $this->form_validation->set_rules('bankrecd',"", 'trim');              
+               /* Request # 3789  (2020-10-05) (Line) - Changes end here */
                     $this->form_validation->set_rules('bquantity',"", 'trim');     
                     $this->form_validation->set_rules('btype',"", 'trim');     
                     $this->form_validation->set_rules('disengage',"", 'trim');     
@@ -750,6 +868,22 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                     $this->form_validation->set_rules('per_tenth',"", 'trim');     
                     $this->form_validation->set_rules('per_bankrec',"", 'trim');     
                     $this->form_validation->set_rules('per_refdocs',"", 'trim');     
+                    //------3775-----start-----------------------------------
+                    $this->form_validation->set_rules('no_of_papers',"", 'trim'); 
+                    //------3775------end--------------------------------------------    
+                    //-----3809-----start-----------------------------------
+                    $this->form_validation->set_rules('other_deps',"", 'trim'); 
+                    //------3809------end--------------------------------------------  
+                    //-----3884-----start---for Add--------------------------------
+                    $this->form_validation->set_rules('rec_number2',"", 'trim'); 
+                    $this->form_validation->set_rules('issnumber2',"", 'trim'); 
+                    $this->form_validation->set_rules('sender2',"", 'trim'); 
+                    $this->form_validation->set_rules('receiver2',"", 'trim'); 
+                     //------3884------end----for Add--------------------------------   
+                     //------3883------start----for Add--------------------------------   
+                    $this->form_validation->set_rules('gpr_type2',"", 'trim'); 
+                     //------3883------end----for Add--------------------------------   
+                   
                     $this->form_validation->set_rules('per_remarks',"", 'trim');     
                     $this->form_validation->set_rules('per_implement',"", 'trim');
                     
@@ -804,31 +938,49 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                         $data['departmentcode']  = $departmentcode;
                         $data['ministrycode']    = $ministrycode;
                         // initial crime detection 
-                        $req_type1 = "";
+                        $req_type = "";
                         $reqObj = $this->statictables_model->GetCaseStatic_Tables2(1,0,0,TRUE,$this->mng_auth->get_language());
                         if($reqObj)
                         {
                             foreach($reqObj->result() as $row)
                             {
-                                // start of 4465 
-                                if($row->id == 0)
+                                if($row->id == 1)
                                 {
-                                    $req_type1.="<option value = '".$row->id."' ".set_select('req_type', $row->id,TRUE).">".$row->name_en."</option>";
+                                    $req_type.="<option value = '".$row->id."' ".set_select('req_type', $row->id,TRUE).">".$row->name_en."</option>";
                                 }
-                                // end of 4465
-                                 
                                 //Zendesk #1117 activating 'Other' option in the Case subject Dropdown disabled='disabled' value removed from the option tag on line 820 
                                 else if($row->id==4)
                                 {
-                                    $req_type1.="<option value = '".$row->id."' ".set_select('req_type', $row->id).">".$row->name_en."</option>";
+                                    $req_type.="<option value = '".$row->id."' ".set_select('req_type', $row->id).">".$row->name_en."</option>";
                                 }
+                             /* Request # 3866  (2020-10-05) (Line) - Changes start here */
+                                else if($row->id==3)
+                                {
+                                    if($dtype==1){
+                                        $req_type.="<option value = '".$row->id."' ".set_select('req_type', $row->id).">".$row->name_en."</option>";
+                                    }
+                                }
+                           /* Request # 3866  (2020-10-05) (Line) - Changes end here */
                                 else
                                 {
-                                   $req_type1.="<option value = '".$row->id."' ".set_select('req_type', $row->id).">".$row->name_en."</option>";
+                                   $req_type.="<option value = '".$row->id."' ".set_select('req_type', $row->id).">".$row->name_en."</option>";
                                 }
                             }
+                        }   
+                        // case civil 3739   =========
+                          // get rulling_type
+                        $rul_type = "";
+                        $rul_obj = $this->statictables_model->GetCaseStatic_Tables2(29,0,0,TRUE,$this->mng_auth->get_language());
+                        if($rul_obj)
+                        {
+                            foreach($rul_obj->result() as $row)
+                            {
+                                $rul_type.="<option value = '".$row->id."' ".set_select('rull_type', $row->id).">".$row->name_en."</option>";    
+                            }
                         }        
-                        $data['request_type'] = $req_type1;
+                        $data['ruling_type'] = $rul_type;
+                        // ====== case 3739 end ====================     
+                        $data['request_type'] = $req_type;
                         
                         // get gender
                         $gender_type = "";
@@ -841,7 +993,19 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                             }
                         }        
                         $data['gender'] = $gender_type;
-                        
+                   /* Request # 3789  (2020-10-05) (Line) - Changes start here */
+                          // get rulling_type
+                        $reg_fee = "";
+                        $reg_obj = $this->statictables_model->GetCaseStatic_Tables2(31,0,0,TRUE,$this->mng_auth->get_language());
+                        if($reg_obj)
+                        {
+                            foreach($reg_obj->result() as $row)
+                            {
+                                $reg_fee.="<option value = '".$row->id."' ".set_select('reg_fees', $row->id).">".$row->name_en."</option>";    
+                            }
+                        }        
+                        $data['registeration_fees'] = $reg_fee;
+               /* Request # 3789  (2020-10-05) (Line) - Changes end here */
                         // get province
                         $province_opt = "";
                         //$allpr = $this->province_model->GetAllProvinces(0,0,TRUE,$this->mng_auth->get_language());
@@ -909,6 +1073,20 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                         if($dtype == "2")
                         {
                             $am_tpl = $this->load->view("gcase/gcase_am",$data,TRUE);   
+
+                            //-3883-------start-added to populated the type drop down while adding ---
+                              $req_type4 = "";
+                            $reqObj4 = $this->statictables_model->GetCaseStatic_Tables2(22,0,0,TRUE,$this->mng_auth->get_language());
+                            if($reqObj4)
+                            {
+                                foreach($reqObj4->result() as $row)
+                                {
+                                    $req_type4.="<option value = '".$row->id."'>".$row->name_en."</option>";
+                                }
+                            } 
+
+                             $data['type4'] = $req_type4;
+                            //-3883---------end-added to populated the type drop down while adding --- 
                             $perf_tpl = $this->load->view("gcase/gcase_perf",$data,TRUE); 
                             
                             //load language file too of ghuquq
@@ -964,6 +1142,18 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                                     $other_type.="<option value = '".$row->id."'>".$row->name_en."</option>";
                                 }
                             }
+                            /* ticket 4007 ------------------------- */
+                             $dec_type_oth = "";
+                            $decObj_oth = $this->statictables_model->GetCaseStatic_Tables2(32,0,0,TRUE,$this->mng_auth->get_language());
+                            if($decObj_oth)
+                            {
+                                foreach($decObj_oth->result() as $row)
+                                {
+                                    $dec_type_oth.="<option value = '".$row->id."'>".$row->name_en."</option>";
+                                }
+                            }  
+                            $data['court_dec_oth'] = $dec_type_oth;
+                            /* ticket 4007 end ------------------- */
                                    
                             $data['type'] = $req_type;
                             $data['court_dec'] = $dec_type;
@@ -986,7 +1176,7 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                         $data['perf'] = $perf_tpl;
                         $data['dtype'] = $dtype;
                         
-                        // get Crime type - zaman request
+                        // get Crime type
                         $crime = "";
                         $crimetitle = $this->crime_type_model->GetAllRecords(0,0,TRUE,$this->mng_auth->get_language());
                         if($crimetitle)
@@ -1052,7 +1242,11 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                         //$invite_date  = datecheck($this->input->post('invite_year'),$this->input->post('invite_month'),$this->input->post('invite_day'),$this->mng_auth->get_language());  
                         $zdate    = datecheck($this->input->post('zyear'),$this->input->post('zmonth'),$this->input->post('zday'),$this->mng_auth->get_language());  
                         $brecdate    = datecheck($this->input->post('bryear'),$this->input->post('brmonth'),$this->input->post('brday'),$this->mng_auth->get_language());  
-                        
+               /* Request # 3789  (2020-10-05) (Line) - Changes start here */
+                        $brecdate_pr    = datecheck($this->input->post('bryeara'),$this->input->post('brmontha'),$this->input->post('brdaya'),$this->mng_auth->get_language());
+                        $brecdate_bu    = datecheck($this->input->post('bryearb'),$this->input->post('brmonthb'),$this->input->post('brdayb'),$this->mng_auth->get_language());
+                        $brecdate_oth    = datecheck($this->input->post('bryeard'),$this->input->post('brmonthd'),$this->input->post('brdayd'),$this->mng_auth->get_language());
+               /* Request # 3789  (2020-10-05) (Line) - Changes end here */
                         //rep date 1
                         $attrepdate   = datecheck($this->input->post('repnoyear'),$this->input->post('repnomonth'),$this->input->post('repnoday'),$this->mng_auth->get_language());  
                         $attrepdate2    = datecheck($this->input->post('repnoyear2'),$this->input->post('repnomonth2'),$this->input->post('repnoday2'),$this->mng_auth->get_language());  
@@ -1063,6 +1257,10 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                         
                         $save_date      = datecheck($this->input->post('svyear'),$this->input->post('svmonth'),$this->input->post('svday'),$this->mng_auth->get_language());      
                         $doc_reg_date      = datecheck($this->input->post('reg_year'),$this->input->post('reg_month'),$this->input->post('reg_day'),$this->mng_auth->get_language());      
+                        //-3884------start-added for saving recieve date and send date------
+                         $doc_reci_date      = datecheck($this->input->post('ryear2'),$this->input->post('rmonth2'),$this->input->post('rday2'),$this->mng_auth->get_language()); 
+                        $doc_send_date      = datecheck($this->input->post('syear2'),$this->input->post('smonth2'),$this->input->post('sday2'),$this->mng_auth->get_language());       
+                        //-3884----end-added for saving recieve date and send date------   
                         
                         //=== get crime types and add to database ===
                         $crtype =$this->input->post('crimetypes'); 
@@ -1087,6 +1285,20 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                                 }
                              }
                         }
+               /* Request # 3789  (2020-10-05) (Line) - Changes start here */
+                         $rega="";
+                         $regb="";
+                         $regc="";
+                         if ($this->input->post('n_request_type')==1){
+                            $rega=1;
+                         }
+                         else if ($this->input->post('n_request_type')==2){
+                            $regb=2;
+                         }
+                         else if ($this->input->post('n_request_type')==3){
+                            $regc=3;
+                         }
+               /* Request # 3789  (2020-10-05) (Line) - Changes end here */
                         //==== form data ====
                         $form_data = array(
                                             'case_number'            =>$casenumber, 
@@ -1102,6 +1314,18 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                                             'pr_village'             =>$this->input->post('plocvillage'),
                                             'bs_transf'              =>$this->input->post('transf'),
                                             'bs_price'               =>$this->input->post('bprice'),
+                                         /* Request # 3789  (2020-10-05) (Line) - Changes start here */
+                                            'reg_fees_pr'            =>$rega,
+                                            'per_bankrec_pr'         =>$this->input->post('bankreca'),
+                                            'per_bankrecdate_pr'     =>$brecdate_pr,
+                                            'reg_fees_bus'           =>$regb,
+                                            'per_bankrec_bus'        =>$this->input->post('bankrecb'),
+                                            'per_bankrecdate_bus'    =>$brecdate_bu,
+                                            'reg_fees_fam'           =>$regc,
+                                            'reg_fees_oth'        =>$this->input->post('reg_feesd'),
+                                            'per_bankrec_oth'        =>$this->input->post('bankrecd'),
+                                            'per_bankrecdate_oth'    =>$brecdate_oth,
+                                          /* Request # 3789  (2020-10-05) (Line) - Changes end here */
                                             'bs_quantity'            =>$this->input->post('bquantity'),
                                             'bs_type'                =>$this->input->post('btype'),
                                             'bs_province'            =>$this->input->post('ploc2'),
@@ -1178,6 +1402,23 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                                             'per_bankrec'             =>$this->input->post('per_bankrec'),
                                             'per_bankrecdate'         =>$brecdate,
                                             'per_refdoc'              =>$this->input->post('per_refdocs'),
+                               //-----------------3775---start-----------------
+                            'no_of_paper'              =>$this->input->post('no_of_papers'),
+                            //---------------3775---start----------------------------
+                             //-----------------3809---start-----------------
+                            'other_dep'              =>$this->input->post('other_deps'),
+                             //---------------3809---start----------------------------
+                            //-3884---start-added to save the newly added fields----------------
+                            'rec_number2'              =>$this->input->post('rec_number2'),
+                            'send_date2'                =>$doc_send_date,
+                            'rec_date2'                 =>$doc_reci_date,
+                            'issue_number2'              =>$this->input->post('issnumber2'),
+                            'sender33'              =>$this->input->post('sender2'),
+                            'receiver33'              =>$this->input->post('receiver2'),
+                            //-3884---end-added to save the newly added fields----------------
+                            //-3883---start-added to save the newly added fields----------------
+                            'type2'              =>$this->input->post('gpr_type2'),
+                            //-3883---end-added to save the newly added fields----------------
                                             'remarks'                 =>$this->input->post('per_remarks'),
                                             'order_province'          =>$this->input->post('n_province2'),
                                             'order_district'          =>$this->input->post('n_district2'),
@@ -1186,7 +1427,10 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                                             'ministry'             =>$minid, 
                                             'registerdate'             =>date('Y-m-d H:i:s'),
                                             'gper_negotiate'           =>$this->input->post('negotiate'),
-                                            'gper_isrecon'             =>$this->input->post('solut'),
+                                             //  ticket 3739 ===============
+                                            'rulling_type'           =>$this->input->post('rull_type'),
+                                             // ticket 3739   end =====================
+                                            //'gper_isrecon'             =>$this->input->post('solut'),
                                             'gper_verif'               =>$this->input->post('verif'),
                                             'gper_implement'           =>$this->input->post('per_implement'), 
                                             'ploc_country'           =>$this->input->post('ploc_country'), 
@@ -1329,7 +1573,10 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                                 $fname  = $this->input->post('gpr_fathername');  
                                 $phone  = $this->input->post('gpr_phone');  
                                 // gov benefit or lost for after court section 
-                                $gov_benefit  = $this->input->post('n_gpr_court_dec');  
+                                $gov_benefit  = $this->input->post('n_gpr_court_dec');
+                                /* ticket 4007 start here -------------- */
+                                $gov_benefit_nxt  = $this->input->post('court_dec_next');
+                                /* ticket 4007 end here -------------- */
                                 //$land  = $this->input->post('gpr_land');  
                                 $land_type  = $this->input->post('gpr_land_type');  
                                 $land_value  = $this->input->post('gpr_land_value');  
@@ -1382,6 +1629,9 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                                               'fathername'        => $fname[$key],
                                               'telephone'         => $phone[$key],
                                               'gov_benefit'       => $gov_benefit[$key],
+                                              /* ticket 4007 start here ------------ */
+                                              'gov_benefit_nxt'       => $gov_benefit_nxt[$key],
+                                              /* ticket 4007 end here -------------  */
                                               //'land_fine'         => $land[$key],
                                               'land_type'         => $land_type[$key],
                                               'land_value'        => $land_value[$key],
@@ -1429,7 +1679,10 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                                 $fname  = $this->input->post('app_fathername');  
                                 $phone  = $this->input->post('app_phone');  
                                 // gov benefit or lost for after court section 
-                                $gov_benefit  = $this->input->post('n_app_court_dec');  
+                                $gov_benefit  = $this->input->post('n_app_court_dec');
+                                /* ticket 4007 ----------------- */
+                                $gov_benefit_nxt  = $this->input->post('court_app_next');  
+                                /* ticket 4007 end ----------------  */  
                                 //$land  = $this->input->post('app_land');  
                                 $land_type  = $this->input->post('app_land_type');  
                                 $land_value  = $this->input->post('app_land_value');  
@@ -1480,6 +1733,9 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                                               'fathername'        => $fname[$key],
                                               'telephone'         => $phone[$key],
                                               'gov_benefit'       => $gov_benefit[$key],
+                                              /* ticket 4007 start ----------  */
+                                              'gov_benefit_nxt'       => $gov_benefit_nxt[$key],
+                                              /*  ticket 4007 end -------------  */
                                               //'land_fine'         => $land[$key],
                                               'land_type'         => $land_type[$key],
                                               'land_value'        => $land_value[$key],
@@ -1590,19 +1846,6 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                     
             }
         }
-
-
-
-// start of 4465
- function fetch_state()
- {
-  if($this->input->post('country_id1'))
-  {
-   echo $this->crime_type_model->fetch_state($this->input->post('country_id1'), $this->mng_auth->get_language());
-  }
- }
-// end of 4465
-
         //get province list by department id 
         function GetDepProvince()
         {
@@ -2937,6 +3180,164 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
             $str.="</select>";
             echo $str;
         }
+
+        //------3183----15082020---------
+        function wakilArezdistrictlist()
+        { 
+           
+            //load all district by province 
+            $allDes   = $this->province_model->GetDistrictsByProvince(0,0,true,$this->mng_auth->get_language(),$this->input->post('provincecode'));
+            $str ="<select name=\"".$this->input->post('name')."\" id=\"".$this->input->post('name')."\" style=\"width:".$this->input->post('w')."px\" class=\"selectbox\"
+             onchange=\"bring_page('".base_url()."case/home/wakilArezVillageList','".$this->input->post('name')."','districtcode','repvildiv3','&name=repvillage3&w=190');\">";
+            $str.="<option value=\"\">".$this->lang->line('select_district')."</option>";
+            if($allDes)
+            {
+                foreach($allDes->result() AS $row)
+                {
+                    $str.="<option value=".$row->code." ".set_select($this->input->post('name'),$row->code).">".$row->name."</option>";
+                }
+            }
+            $str.="</select>";
+            echo $str;
+        }
+
+
+           function wakilArezVillageList()
+        {
+            //load all district by province 
+            $allDes   = $this->province_model->GetVillageByDistrict(0,0,true,$this->mng_auth->get_language(),$this->input->post('districtcode'));
+            //print_r($allDes->result_array()); exit;
+            $str ="<select name=\"".$this->input->post('name')."\" id=\"".$this->input->post('name')."\" style=\"width:".$this->input->post('w')."px\" class=\"selectbox\">";
+            $str.="<option value=\"\">".$this->lang->line('det_select')."</option>";
+            if($allDes)
+            {
+                foreach($allDes->result() AS $row)
+                {
+                    $str.="<option value=".$row->villagecode." ".set_select($this->input->post('name'),$row->villagecode).">".$row->villagename."</option>";
+                }
+            }
+            $str.="</select>";
+            echo $str;
+        }
+
+
+         function wakilMarozdistrictlist()
+        { 
+           
+            //load all district by province 
+            $allDes   = $this->province_model->GetDistrictsByProvince(0,0,true,$this->mng_auth->get_language(),$this->input->post('provincecode'));
+            $str ="<select name=\"".$this->input->post('name')."\" id=\"".$this->input->post('name')."\" style=\"width:".$this->input->post('w')."px\" class=\"selectbox\"
+             onchange=\"bring_page('".base_url()."case/home/wakilMarozVillageList','".$this->input->post('name')."','districtcode','repvildiv22','&name=repvillage22&w=190');\">";
+            $str.="<option value=\"\">".$this->lang->line('select_district')."</option>";
+            if($allDes)
+            {
+                foreach($allDes->result() AS $row)
+                {
+                    $str.="<option value=".$row->code." ".set_select($this->input->post('name'),$row->code).">".$row->name."</option>";
+                }
+            }
+            $str.="</select>";
+            echo $str;
+        }
+
+
+           function wakilMarozVillageList()
+        {
+            //load all district by province 
+            $allDes   = $this->province_model->GetVillageByDistrict(0,0,true,$this->mng_auth->get_language(),$this->input->post('districtcode'));
+            //print_r($allDes->result_array()); exit;
+            $str ="<select name=\"".$this->input->post('name')."\" id=\"".$this->input->post('name')."\" style=\"width:".$this->input->post('w')."px\" class=\"selectbox\">";
+            $str.="<option value=\"\">".$this->lang->line('det_select')."</option>";
+            if($allDes)
+            {
+                foreach($allDes->result() AS $row)
+                {
+                    $str.="<option value=".$row->villagecode." ".set_select($this->input->post('name'),$row->villagecode).">".$row->villagename."</option>";
+                }
+            }
+            $str.="</select>";
+            echo $str;
+        }
+
+
+           function wakilArezdistrictlistgcase()
+        { 
+           
+            //load all district by province 
+            $allDes   = $this->province_model->GetDistrictsByProvince(0,0,true,$this->mng_auth->get_language(),$this->input->post('provincecode'));
+            $str ="<select name=\"".$this->input->post('name')."\" id=\"".$this->input->post('name')."\" style=\"width:".$this->input->post('w')."px\" class=\"selectbox\"
+             onchange=\"bring_page('".base_url()."case/home/wakilArezVillageListgcase','".$this->input->post('name')."','districtcode','repvildiv4','&name=repvillage4&w=190');\">";
+            $str.="<option value=\"\">".$this->lang->line('select_district')."</option>";
+            if($allDes)
+            {
+                foreach($allDes->result() AS $row)
+                {
+                    $str.="<option value=".$row->code." ".set_select($this->input->post('name'),$row->code).">".$row->name."</option>";
+                }
+            }
+            $str.="</select>";
+            echo $str;
+        }
+
+
+           function wakilArezVillageListgcase()
+        {
+            //load all district by province 
+            $allDes   = $this->province_model->GetVillageByDistrict(0,0,true,$this->mng_auth->get_language(),$this->input->post('districtcode'));
+            //print_r($allDes->result_array()); exit;
+            $str ="<select name=\"".$this->input->post('name')."\" id=\"".$this->input->post('name')."\" style=\"width:".$this->input->post('w')."px\" class=\"selectbox\">";
+            $str.="<option value=\"\">".$this->lang->line('det_select')."</option>";
+            if($allDes)
+            {
+                foreach($allDes->result() AS $row)
+                {
+                    $str.="<option value=".$row->villagecode." ".set_select($this->input->post('name'),$row->villagecode).">".$row->villagename."</option>";
+                }
+            }
+            $str.="</select>";
+            echo $str;
+        }
+
+
+
+          function wakilMarozdistrictlistgcase()
+        { 
+           
+            //load all district by province 
+            $allDes   = $this->province_model->GetDistrictsByProvince(0,0,true,$this->mng_auth->get_language(),$this->input->post('provincecode'));
+            $str ="<select name=\"".$this->input->post('name')."\" id=\"".$this->input->post('name')."\" style=\"width:".$this->input->post('w')."px\" class=\"selectbox\"
+             onchange=\"bring_page('".base_url()."case/home/wakilMarozVillageListgcase','".$this->input->post('name')."','districtcode','repvildiv5','&name=repvillage5&w=190');\">";
+            $str.="<option value=\"\">".$this->lang->line('select_district')."</option>";
+            if($allDes)
+            {
+                foreach($allDes->result() AS $row)
+                {
+                    $str.="<option value=".$row->code." ".set_select($this->input->post('name'),$row->code).">".$row->name."</option>";
+                }
+            }
+            $str.="</select>";
+            echo $str;
+        }
+
+
+           function wakilMarozVillageListgcase()
+        {
+            //load all district by province 
+            $allDes   = $this->province_model->GetVillageByDistrict(0,0,true,$this->mng_auth->get_language(),$this->input->post('districtcode'));
+            //print_r($allDes->result_array()); exit;
+            $str ="<select name=\"".$this->input->post('name')."\" id=\"".$this->input->post('name')."\" style=\"width:".$this->input->post('w')."px\" class=\"selectbox\">";
+            $str.="<option value=\"\">".$this->lang->line('det_select')."</option>";
+            if($allDes)
+            {
+                foreach($allDes->result() AS $row)
+                {
+                    $str.="<option value=".$row->villagecode." ".set_select($this->input->post('name'),$row->villagecode).">".$row->villagename."</option>";
+                }
+            }
+            $str.="</select>";
+            echo $str;
+        }
+        //------3183-------15082020-----------------
         
         //district list 
         function plocdistrictlist2()
@@ -3580,7 +3981,16 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                     $this->form_validation->set_rules('area',"", 'trim');     
                     $this->form_validation->set_rules('type',"", 'trim');     
                     $this->form_validation->set_rules('transf',"", 'trim');     
-                    $this->form_validation->set_rules('bprice',"", 'trim');     
+                    $this->form_validation->set_rules('bprice',"", 'trim'); 
+               /* Request # 3789  (2020-10-05) (Line) - Changes start here */
+                    $this->form_validation->set_rules('reg_feesa',"", 'trim');  
+                    $this->form_validation->set_rules('bankreca',"", 'trim');     
+                    $this->form_validation->set_rules('reg_feesb',"", 'trim');     
+                    $this->form_validation->set_rules('bankrecb',"", 'trim');     
+                    $this->form_validation->set_rules('reg_feesc',"", 'trim');     
+                    $this->form_validation->set_rules('reg_feesd',"", 'trim');  
+                    $this->form_validation->set_rules('bankrecd',"", 'trim');              
+               /* Request # 3789  (2020-10-05) (Line) - Changes end here */
                     $this->form_validation->set_rules('bquantity',"", 'trim');     
                     $this->form_validation->set_rules('btype',"", 'trim');     
                     $this->form_validation->set_rules('disengage',"", 'trim');     
@@ -3628,7 +4038,22 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                     $this->form_validation->set_rules('per_amount',"", 'trim');     
                     $this->form_validation->set_rules('per_tenth',"", 'trim');     
                     $this->form_validation->set_rules('per_bankrec',"", 'trim');     
-                    $this->form_validation->set_rules('per_refdocs',"", 'trim');     
+                    $this->form_validation->set_rules('per_refdocs',"", 'trim');
+                     //------3775-----start-----------------------------------
+                    $this->form_validation->set_rules('no_of_papers',"", 'trim'); 
+                    //------3775------end-------------------------------------------- 
+                   //------3809-----start-----------------------------------
+                    $this->form_validation->set_rules('other_deps',"", 'trim'); 
+                   //------3809------end--------------------------------------------      
+                    //-----3884-----start-------------------------------------------
+                    $this->form_validation->set_rules('rec_number2',"", 'trim'); 
+                    $this->form_validation->set_rules('issnumber2',"", 'trim'); 
+                    $this->form_validation->set_rules('sender2',"", 'trim'); 
+                    $this->form_validation->set_rules('receiver2',"", 'trim');
+                     //-----3884-----end------------------------------------------- 
+                     //-----3883-----start-------------------------------------------
+                    $this->form_validation->set_rules('req_type2',"", 'trim'); 
+                    //------3883------end--------------------------------------------  
                     $this->form_validation->set_rules('per_remarks',"", 'trim');     
                     $this->form_validation->set_rules('per_implement',"", 'trim');     
                     
@@ -3759,7 +4184,63 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                         $data['b_day']      = $this->datedetails(1,0,0,'bday',$this->mng_auth->get_language(),0,0,1);
                         $data['b_month']    = $this->datedetails(0,1,0,'bmonth',$this->mng_auth->get_language(),0,0,1);
                         $data['b_year']     = $this->datedetails(0,0,1,'byear',$this->mng_auth->get_language(),0,0,1);
-                        
+                   /* Request # 3789  (2020-10-05) (Line) - Changes start here */
+                         $dateattor = "";
+                        if($this->mng_auth->get_language() == "en")
+                        {
+                             
+                             $dateattor = explode("-",$caserow->per_bankrecdate_pr);
+                             $data['pr_day']      = $this->datedetails(1,0,0,'bday',$this->mng_auth->get_language(),1,$dateattor[2],1);
+                             $data['pr_month']    = $this->datedetails(0,1,0,'bmonth',$this->mng_auth->get_language(),1,$dateattor[1],1);
+                             $data['pr_year']     = $this->datedetails(0,0,1,'byear',$this->mng_auth->get_language(),1,$dateattor[0],1);
+                        }
+                        else
+                        {
+                             $dateattor   = explode("-",$caserow->per_bankrecdate_pr);  
+                             $detdatehj = $this->dateconverter->Toshamsi_short($dateattor[0],$dateattor[1],$dateattor[2]);    
+                             $dateattor   = explode("-",$detdatehj);
+                             $data['pr_day']      = $this->datedetails(1,0,0,'bday',$this->mng_auth->get_language(),1,$dateattor[0],1);
+                             $data['pr_month']    = $this->datedetails(0,1,0,'bmonth',$this->mng_auth->get_language(),1,$dateattor[1],1);
+                             $data['pr_year']     = $this->datedetails(0,0,1,'byear',$this->mng_auth->get_language(),1,$dateattor[2],1);
+                        }
+
+                          $dateattor = "";
+                        if($this->mng_auth->get_language() == "en")
+                        {
+                             
+                             $dateattor = explode("-",$caserow->per_bankrecdate_bus);
+                             $data['bus_day']      = $this->datedetails(1,0,0,'bday',$this->mng_auth->get_language(),1,$dateattor[2],1);
+                             $data['bus_month']    = $this->datedetails(0,1,0,'bmonth',$this->mng_auth->get_language(),1,$dateattor[1],1);
+                             $data['bus_year']     = $this->datedetails(0,0,1,'byear',$this->mng_auth->get_language(),1,$dateattor[0],1);
+                        }
+                        else
+                        {
+                             $dateattor   = explode("-",$caserow->per_bankrecdate_bus);  
+                             $detdatehj = $this->dateconverter->Toshamsi_short($dateattor[0],$dateattor[1],$dateattor[2]);    
+                             $dateattor   = explode("-",$detdatehj);
+                             $data['bus_day']      = $this->datedetails(1,0,0,'bday',$this->mng_auth->get_language(),1,$dateattor[0],1);
+                             $data['bus_month']    = $this->datedetails(0,1,0,'bmonth',$this->mng_auth->get_language(),1,$dateattor[1],1);
+                             $data['bus_year']     = $this->datedetails(0,0,1,'byear',$this->mng_auth->get_language(),1,$dateattor[2],1);
+                        }
+                          $dateattor = "";
+                        if($this->mng_auth->get_language() == "en")
+                        {
+                             
+                             $dateattor = explode("-",$caserow->per_bankrecdate_oth);
+                             $data['oth_day']      = $this->datedetails(1,0,0,'bday',$this->mng_auth->get_language(),1,$dateattor[2],1);
+                             $data['oth_month']    = $this->datedetails(0,1,0,'bmonth',$this->mng_auth->get_language(),1,$dateattor[1],1);
+                             $data['oth_year']     = $this->datedetails(0,0,1,'byear',$this->mng_auth->get_language(),1,$dateattor[0],1);
+                        }
+                        else
+                        {
+                             $dateattor   = explode("-",$caserow->per_bankrecdate_oth);  
+                             $detdatehj = $this->dateconverter->Toshamsi_short($dateattor[0],$dateattor[1],$dateattor[2]);    
+                             $dateattor   = explode("-",$detdatehj);
+                             $data['oth_day']      = $this->datedetails(1,0,0,'bday',$this->mng_auth->get_language(),1,$dateattor[0],1);
+                             $data['oth_month']    = $this->datedetails(0,1,0,'bmonth',$this->mng_auth->get_language(),1,$dateattor[1],1);
+                             $data['oth_year']     = $this->datedetails(0,0,1,'byear',$this->mng_auth->get_language(),1,$dateattor[2],1);
+                        }
+                        /* Request # 3789  (2020-10-05) (Line) - Changes end here */
                         //----- attorney date1 -----
                         $dateattor = "";
                         if($this->mng_auth->get_language() == "en")
@@ -3835,10 +4316,46 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                              $data['hqis_year']     = $this->datedetails_req(0,0,1,'byear',$this->mng_auth->get_language(),1,$dateattor[2],1);
                         }
                     
+//-------3884----start--added to edit the recieve date and send date---------------
+                        $dateattor = "";
+                        if($this->mng_auth->get_language() == "en")
+                        {
+                             $dateattor = explode("-",$caserow->send_date2);
+                             $data['send_daygcase']      = $this->datedetails_req(1,0,0,'bday',$this->mng_auth->get_language(),1,$dateattor[2],1);
+                             $data['send_monthgcase']    = $this->datedetails_req(0,1,0,'bmonth',$this->mng_auth->get_language(),1,$dateattor[1],1);
+                             $data['send_yeargcase']     = $this->datedetails_req(0,0,1,'byear',$this->mng_auth->get_language(),1,$dateattor[0],1);
+                        }
+                        else
+                        {
+                             $dateattor   = explode("-",$caserow->send_date2);  
+                             $detdatehj = $this->dateconverter->Toshamsi_short($dateattor[0],$dateattor[1],$dateattor[2]);    
+                             $dateattor   = explode("-",$detdatehj);
+                             $data['send_daygcase']      = $this->datedetails_req(1,0,0,'bday',$this->mng_auth->get_language(),1,$dateattor[0],1);
+                             $data['send_monthgcase']    = $this->datedetails_req(0,1,0,'bmonth',$this->mng_auth->get_language(),1,$dateattor[1],1);
+                             $data['send_yeargcase']     = $this->datedetails_req(0,0,1,'byear',$this->mng_auth->get_language(),1,$dateattor[2],1);
+                        }
                         
                         $dateattor = "";
                         if($this->mng_auth->get_language() == "en")
                         {
+                             $dateattor = explode("-",$caserow->rec_date2);
+                             $data['rec_daygcase']      = $this->datedetails_req(1,0,0,'bday',$this->mng_auth->get_language(),1,$dateattor[2],1);
+                             $data['rec_monthgcase']    = $this->datedetails_req(0,1,0,'bmonth',$this->mng_auth->get_language(),1,$dateattor[1],1);
+                             $data['rec_yeargcase']     = $this->datedetails_req(0,0,1,'byear',$this->mng_auth->get_language(),1,$dateattor[0],1);
+                        }
+                        else
+                        {
+                             $dateattor   = explode("-",$caserow->rec_date2);  
+                             $detdatehj = $this->dateconverter->Toshamsi_short($dateattor[0],$dateattor[1],$dateattor[2]);    
+                             $dateattor   = explode("-",$detdatehj);
+                             $data['rec_daygcase']      = $this->datedetails_req(1,0,0,'bday',$this->mng_auth->get_language(),1,$dateattor[0],1);
+                             $data['rec_monthgcase']    = $this->datedetails_req(0,1,0,'bmonth',$this->mng_auth->get_language(),1,$dateattor[1],1);
+                             $data['rec_yeargcase']     = $this->datedetails_req(0,0,1,'byear',$this->mng_auth->get_language(),1,$dateattor[2],1);
+                        }
+//---3884---end---added to edit the recieve date and send date---------                    
+                            $dateattor = "";
+                            if($this->mng_auth->get_language() == "en")
+                            {
                              
                              $dateattor = explode("-",$caserow->hq_invitedate);
                              $data['inv_day']      = $this->datedetails(1,0,0,'bday',$this->mng_auth->get_language(),1,$dateattor[2],1);
@@ -4061,7 +4578,80 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                                 }
                             }
                         }        
-                        $data['request_type'] = $req_type;      
+                        $data['request_type'] = $req_type;
+                         // case civil 3739   =========
+                     $ruling_type  = "";
+                     $rullSelect="";
+                     $rullObj2 = $this->statictables_model->GetCaseStatic_Tables2(29,0,0,TRUE,$this->mng_auth->get_language());
+                     if($rullObj2)
+                     {
+                        foreach($rullObj2->result() as $row_rull)
+                        {
+                            if($row_rull->id == $caserow->rulling_type)
+                            {
+                                $rullSelect="selected";
+                                $ruling_type.="<option value = '".$row_rull->id."'".$rullSelect.">".$row_rull->name_en."</option>";
+                            }
+                            else
+                            {
+                                $rullSelect="";
+                                $ruling_type.="<option value = '".$row_rull->id."' ".$rullSelect.">".$row_rull->name_en."</option>";
+                            }
+                        
+                        }
+                     }
+                     $data['rulling_type'] = $ruling_type;
+
+                        // ====== case 3739 end ====================       
+               /* Request # 3789  (2020-10-05) (Line) - Changes start here */
+                     $reg_fees  = "";
+                     $regSelect="";
+                     $regObj2 = $this->statictables_model->GetCaseStatic_Tables2(31,0,0,TRUE,$this->mng_auth->get_language());
+                     if($regObj2)
+                     {
+                        foreach($regObj2->result() as $row_reg)
+                        {
+                            if($row_reg->id == $caserow->reg_fees_oth)
+                            {
+                                $regSelect="selected";
+                                $reg_fees.="<option value = '".$row_reg->id."'".$regSelect.">".$row_reg->name_en."</option>";
+                            }
+                            else
+                            {
+                                $regSelect="";
+                                $reg_fees.="<option value = '".$row_reg->id."' ".$regSelect.">".$row_reg->name_en."</option>";
+                            }
+                        
+                        }
+                     }
+                     $data['registeration_fees'] = $reg_fees;
+               
+               /* Request # 3789  (2020-10-05) (Line) - Changes end here */
+    //-------3883--------start---added to get the 'type' drop down displayed -------------------
+                        $type3 = "";
+                        $reqObj3 = $this->statictables_model->GetCaseStatic_Tables2(22,0,0,TRUE,$this->mng_auth->get_language());
+                        if($reqObj3)
+                        {
+                            foreach($reqObj3->result() as $row)
+                            {
+                                if($row->id == $caserow->type2)
+                                
+                                {
+                                    $type3.="<option value = '".$row->id."' ".set_select('type3', $row->id,TRUE).">".$row->name_en."</option>";
+                                }
+                                else if($row->id!=273)
+                                {
+                                   $type3.="<option value = '".$row->id."' ".set_select('type3', $row->id).">".$row->name_en."</option>";
+                                }
+
+                                else if($row->id==273)
+                                {
+                                    $type3.="<option value = '".$row->id."' ".set_select('type3', $row->id).">".$row->name_en."</option>";
+                                }
+                            }
+                        }        
+                        $data['type3'] = $type3;
+//---------3883--------end-----added to get the 'type' drop down displayed-----------------  
                         
                         $order_province = "";
                         $ar_pbprovince ="";
@@ -4494,6 +5084,31 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                             $tpl_type = "ca";
                         }
                         //get all submodule list
+
+//---3884---------------------------------------------start
+                        $this->load->model('users/user_model');                    
+                        $AllDepObj2 = $this->user_model->GetDepsByProvinceSenderReceiver($caserow->order_province,$this->mng_auth->get_language(),$this->mng_auth->default_mod,1);
+                        
+                        $senders_opt2   = "";
+                        $name2='org_name'.$this->mng_auth->get_language();
+                        $receivers_opt2 = "";
+                        if($AllDepObj2)
+                        {
+                            foreach($AllDepObj2->result() AS $item2)
+                            {
+                               $senders_opt2.="<option value=\"".$item2->id."\">".$item2->id."</option>";
+                               $receivers_opt2.="<option value=\"".$item2->id."\">".$item2->id."</option>";
+                            } 
+                        }
+
+                         //$dataSendRec2 = $this->case_model->getSendReceives($casedecoded,$this->mng_auth->get_language());
+                        $data['records2'] = $caserow;
+
+                        $data['alldepobject2'] = $AllDepObj2;
+                        $data['senders_opt2']   = $senders_opt2;
+                        $data['receivers_opt2'] = $receivers_opt2;
+    //---3884----------------------end------------------------------------
+
                         $message = $this->load->view("case/case_edit",$data,TRUE);   
                         $submodulelink = $this->mng_auth->allsubmodules_bymcode();
                         $tab_template  = tab_tpl_cms($submodulelink,$summary.$message,$tpl_type,$enc_caseid,"view");
@@ -4568,10 +5183,14 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                        //====== vissue date attorney date ===
                         $vissue_date    = datecheck($this->input->post('attyear'),$this->input->post('attmonth'),$this->input->post('attday'),$this->mng_auth->get_language());  
                         $vdoc_date    = datecheck($this->input->post('n_vdoc_year'),$this->input->post('n_vdoc_month'),$this->input->post('n_vdoc_day'),$this->mng_auth->get_language());  
+//-3884--added to edit recive date and issue date---start-----------------
+                          $rec_gcase_date    = datecheck($this->input->post('rec_year_gcase'),$this->input->post('rec_month_gcase'),$this->input->post('rec_day_gcase'),$this->mng_auth->get_language());
+                          $send_gcase_date    = datecheck($this->input->post('send_year_gcase'),$this->input->post('send_month_gcase'),$this->input->post('send_day_gcase'),$this->mng_auth->get_language()); 
+//-3884--added to edit recive date and issue date-----end--------- 
                         //$invite_date    = datecheck($this->input->post('invite_year'),$this->input->post('invite_month'),$this->input->post('invite_day'),$this->mng_auth->get_language());  
                         $zdate    = datecheck($this->input->post('zyear'),$this->input->post('zmonth'),$this->input->post('zday'),$this->mng_auth->get_language());  
                         $brecdate    = datecheck($this->input->post('bryear'),$this->input->post('brmonth'),$this->input->post('brday'),$this->mng_auth->get_language());  
-                        
+                                              
                         //rep date 1
                         $attrepdate    = datecheck($this->input->post('repnoyear'),$this->input->post('repnomonth'),$this->input->post('repnoday'),$this->mng_auth->get_language());  
                         $attrepdate2    = datecheck($this->input->post('repnoyear2'),$this->input->post('repnomonth2'),$this->input->post('repnoday2'),$this->mng_auth->get_language());  
@@ -4579,12 +5198,30 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                         $invite_date    = datecheck($this->input->post('invite_year'),$this->input->post('invite_month'),$this->input->post('invite_day'),$this->mng_auth->get_language());      
                         $invite_date2   = datecheck($this->input->post('invite_year2'),$this->input->post('invite_month2'),$this->input->post('invite_day2'),$this->mng_auth->get_language());      
                         $invite_date3   = datecheck($this->input->post('invite_year3'),$this->input->post('invite_month3'),$this->input->post('invite_day3'),$this->mng_auth->get_language());      
-                        
+                       /* Request # 3789  (2020-10-05) (Line) - Changes start here */
+                        $brecdate_pr    = datecheck($this->input->post('bryeara'),$this->input->post('brmontha'),$this->input->post('brdaya'),$this->mng_auth->get_language());
+                        $brecdate_bu    = datecheck($this->input->post('bryearb'),$this->input->post('brmonthb'),$this->input->post('brdayb'),$this->mng_auth->get_language());
+                        $brecdate_oth    = datecheck($this->input->post('bryeard'),$this->input->post('brmonthd'),$this->input->post('brdayd'),$this->mng_auth->get_language());
+                    /* Request # 3789  (2020-10-05) (Line) - Changes end here */
                         ///---Case Save Date
                         $save_date      = datecheck($this->input->post('svyear'),$this->input->post('svmonth'),$this->input->post('svday'),$this->mng_auth->get_language());      
                         $doc_reg_date      = datecheck($this->input->post('reg_year'),$this->input->post('reg_month'),$this->input->post('reg_day'),$this->mng_auth->get_language());      
                           
                         //==== form data ====
+               /* Request # 3789  (2020-10-05) (Line) - Changes start here */
+                         $rega="";
+                         $regb="";
+                         $regc="";
+                         if ($this->input->post('n_request_type')==1){
+                            $rega=1;
+                         }
+                         else if ($this->input->post('n_request_type')==2){
+                            $regb=2;
+                         }
+                         else if ($this->input->post('n_request_type')==3){
+                            $regc=3;
+                         }
+               /* Request # 3789  (2020-10-05) (Line) - Changes end here */
                         $form_data = array(
                                             'case_number'            =>$casenumber,  
                                             'crime_type'             =>$crimeTypes,  
@@ -4598,6 +5235,18 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                                             'pr_village'             =>$this->input->post('plocvillage'),
                                             'bs_transf'              =>$this->input->post('transf'),
                                             'bs_price'               =>$this->input->post('bprice'),
+                                         /* Request # 3789  (2020-10-05) (Line) - Changes start here */
+                                            'reg_fees_pr'            =>$rega,
+                                            'per_bankrec_pr'         =>$this->input->post('bankreca'),
+                                            'per_bankrecdate_pr'     =>$brecdate_pr,
+                                            'reg_fees_bus'           =>$regb,
+                                            'per_bankrec_bus'        =>$this->input->post('bankrecb'),
+                                            'per_bankrecdate_bus'    =>$brecdate_bu,
+                                            'reg_fees_fam'           =>$regc,
+                                            'reg_fees_oth'        =>$this->input->post('reg_feesd'),
+                                            'per_bankrec_oth'        =>$this->input->post('bankrecd'),
+                                            'per_bankrecdate_oth'    =>$brecdate_oth,
+                                         /* Request # 3789  (2020-10-05) (Line) - Changes end here */
                                             'bs_quantity'            =>$this->input->post('bquantity'),
                                             'bs_type'                =>$this->input->post('btype'),
                                             'bs_province'            =>$this->input->post('ploc2'),
@@ -4676,13 +5325,34 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                                             'per_bankrec'             =>$this->input->post('per_bankrec'),
                                             'per_bankrecdate'         =>$brecdate,
                                             'per_refdoc'              =>$this->input->post('per_refdocs'),
+                                            //-----------------3775---start-----------------
+                                            'no_of_paper'              =>$this->input->post('no_of_papers'),
+                                            //---------------3775---start----------------------------
+                                            //-----------------3809---start-----------------
+                                            'other_dep'              =>$this->input->post('other_deps'),
+                                           //---------------3809---start----------------------------
+                                            //-3884---start--for edit ------------------
+                                            'rec_number2'              =>$this->input->post('rec_number2'),
+                                            'send_date2'                =>$send_gcase_date,
+                                            'rec_date2'                 =>$rec_gcase_date,
+                                            'issue_number2'              =>$this->input->post('issnumber2'),
+                                            'sender33'              =>$this->input->post('sender2'),
+                                            'receiver33'              =>$this->input->post('receiver2'),
+                                             //-3884---end---for edit----------------------
+                                             //-3883---end---for edit----------------------
+                                            'type2'              =>$this->input->post('req_type2'),
+                                             //-3883---end---for edit----------------------
+                                           
                                             'remarks'                 =>$this->input->post('per_remarks'),
                                             'order_province'          =>$this->input->post('n_province2'), 
                                             'order_district'          =>$this->input->post('n_district2'), 
                                             'ministry'                =>$minid, 
                                             'department'              =>$depid,
                                             'gper_negotiate'           =>$this->input->post('negotiate'),
-                                            'gper_isrecon'             =>$this->input->post('solut'),
+                                          /* 'gper_isrecon'             =>$this->input->post('solut'),*/   
+                                             // ticket 3739 ========================
+                                            'rulling_type'           =>$this->input->post('rull_type'),
+                                             // ticket 3739 end ==================
                                             'gper_verif'               =>$this->input->post('verif'),
                                             'gper_implement'           =>$this->input->post('per_implement'),
                                             'ploc_country'           =>$this->input->post('ploc_country'), 
@@ -4692,7 +5362,7 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                                             'order_country'           =>$this->input->post('order_country'),             
                                        
                          );
-                        
+                         
                         // run insert model to write data to db
                         if ($this->case_model->UpdateCase($form_data,$casedecoded,$this->mng_auth->get_user_id()) == TRUE) 
                         { 
@@ -4858,6 +5528,29 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                         
                         }
                      }
+                     /* ticket 4007 ---------------------- */
+                     $court_dec_nxt  = "";
+                     $decSelect_nxt="";
+                     $decObj2_nxt = $this->statictables_model->GetCaseStatic_Tables2(32,0,0,TRUE,$this->mng_auth->get_language());
+                     if($decObj2_nxt)
+                     {
+                        foreach($decObj2_nxt->result() as $row_dec_nxt)
+                        {
+                            if($row_dec_nxt->id == $recObj->row()->gov_benefit_nxt)
+                            {
+                                $decSelect_nxt="selected";
+                                $court_dec_nxt.="<option value = '".$row_dec_nxt->id."'".$decSelect_nxt.">".$row_dec_nxt->name_en."</option>";
+                            }
+                            else
+                            {
+                                $decSelect_nxt="";
+                                $court_dec_nxt.="<option value = '".$row_dec_nxt->id."' ".$decSelect_nxt.">".$row_dec_nxt->name_en."</option>";
+                            }
+                        
+                        }
+                     }
+                      $data['court_dec_oth']  = $court_dec_nxt;
+                     /* ticket 4007 ----------------------------- end */
                      //land type dropdown 
                      $land_type  = "";
                      $landSelect="";
@@ -5134,6 +5827,9 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
 
                         $gov_benefit  = $this->input->post('n_data_court_dec');
 
+                         /* ticket 4007 --------------- start */
+                        $gov_benefit_nxt  = $this->input->post('court_dec_next');
+                         /* ticket 4007 ----------------- end */
                         $land = $this->input->post('data_land');
                         $land_type  = $this->input->post('data_land_type');  
                         $land_value  = $this->input->post('data_land_value');
@@ -5195,6 +5891,9 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                               'fathername'        => $fname,
                               'telephone'         => $phone,
                               'gov_benefit'       => $gov_benefit,
+                              /* ticket 4007 start ------- */
+                              'gov_benefit_nxt'       => $gov_benefit_nxt,
+                              /* ticket 4007 end --------- */
                               //'land_fine'         => $land[$key],
                               'land_type'         => $land_type,
                               'land_value'        => $land_value,
@@ -5308,6 +6007,18 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                             $other_type.="<option value = '".$row->id."'>".$row->name_en."</option>";
                         }
                     }
+                     /* ticket 4007 ------------------------- */
+                    $dec_type_oth = "";
+                    $decObj_oth = $this->statictables_model->GetCaseStatic_Tables2(32,0,0,TRUE,$this->mng_auth->get_language());
+                    if($decObj_oth)
+                    {
+                    foreach($decObj_oth->result() as $row)
+                         {
+                        $dec_type_oth.="<option value = '".$row->id."'>".$row->name_en."</option>";
+                        }
+                    }  
+                    $data['court_dec_oth'] = $dec_type_oth;
+                    /* ticket 4007 end ------------------- */
                            
                     $data['req_type'] = $req_type;
                     $data['court_dec'] = $dec_type;
@@ -5404,8 +6115,11 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                         $phone  = $this->input->post('data_phone');  
                         
                         // gov benefit or lost for after court section 
-                        $gov_benefit  = $this->input->post('n_data_court_dec');  
+                        $gov_benefit  = $this->input->post('n_data_court_dec'); 
                         
+                        /* ticket 4007 ---------------- */
+                        $gov_benefit_nxt  = $this->input->post('court_dec_next'); 
+                        /* ticket 4007 ------------------  */
                         $land = $this->input->post('data_land');
                         $land_type  = $this->input->post('data_land_type');  
                         $land_value  = $this->input->post('data_land_value');
@@ -5467,6 +6181,9 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                               'fathername'        => $fname,
                               'telephone'         => $phone,
                               'gov_benefit'       => $gov_benefit,
+                              /* ticket 4007 --------------------- */
+                              'gov_benefit_nxt'       => $gov_benefit_nxt,
+                               /* ticket 4007 end --------------- */
                               //'land_fine'         => $land[$key],
                               'land_type'         => $land_type,
                               'land_value'        => $land_value,
@@ -6349,8 +7066,8 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
                             }
                         }        
                         $data['gender'] = $gender_type;
-                        
-                        //provide record owner
+
+                       //provide record owner
                         $data['recordowner'] = $this->mng_auth->GetCaseOwner($this->mng_auth->get_user_id());
 
                         // get list of all agencies/ministires
@@ -7338,6 +8055,51 @@ comment#          : 25.11.2019 Sultan Ali removed disabled='disabled' value from
             }
         
         }
+          //------------------3884----=======================----start
+    function getDepsProvinceSenderReciver3()
+       {
+            //if this user is not logged in and its not admin
+            if(!$this->mng_auth->is_logged_in()) 
+            {  
+                // logged in, if user is logged in than redirect to home
+                redirect($this->config->item('auth_link'));
+            }
+            else
+            {
+                
+                //---- get all departments where parent is provided and province code exists ----
+                
+                if($this->input->post('prid') != "")
+                {
+                    $name="org_name".$this->mng_auth->get_language();
+                    $allDeps = $this->mng_auth->GetAllParProvinceSenderReciver($this->input->post('prid'));
+                    $depoption = "";
+                    $depoption = "<option value=\"\" selected=\"selected\">".$this->lang->line('case_selectdep')."</option>";
+                    if($allDeps)
+                    {
+                        foreach($allDeps->result() AS $item)
+                        {
+                            $depoption .="<option value=\"".$item->id."\">".$item->$name."</option>"; 
+                        }
+                    }
+                    $dropd = "<div id='senderDiv3' class='txbox_div' >";
+                    $dropd .= "<select name=\"sender2\" id=\"sender2\" class=\"selectbox\" style=\"width: 250px;\" >";
+                    $dropd .= $depoption;
+                    $dropd .="</select></div>";
+                    $dropd .="<div id='receiverDiv3' class='txbox_div' >";
+                    $dropd .= "<select name=\"receiver2\" id=\"receiver2\" class=\"selectbox\" style=\"width: 250px;\" >";    
+                    $dropd .= $depoption;
+                    $dropd .="</select></div>";
+                    
+                    //show dropdwon
+                    echo $dropd;
+                }
+            }
+        
+        }
+     
+
+    //------------------3884--------------------------end----
         
         //datedetails function 
          
