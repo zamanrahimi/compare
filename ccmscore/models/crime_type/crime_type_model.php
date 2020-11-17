@@ -38,29 +38,6 @@ class Crime_type_model extends CI_Model
     {
         return $this->cms_db->count_all('cms_crime_types');
     }
-
- // start of 4465
- function fetch_state($country_id1, $lang='en')
- {
-
-if($lang=='dr'){
-  $this->db->where('request_title_id', $country_id1);
-  $this->db->order_by('id', 'ASC');
-  $query = $this->db->get('cms_crime_types');
-  $output = '<option value="-1"></option>';
-  foreach($query->result() as $row)
-  {
-   $output .= '<option value="'.$row->id.'">'.$row->name_dr.'</option>';
-  }
-  return $output;
-}
-
-
-
- }
-// end of 4465
-
-
     //function to add data into crime type table
     function GetAllRecords($offset, $nrecords, $istotal=FALSE, $lang='en')
     {
@@ -71,7 +48,6 @@ if($lang=='dr'){
         //order the records
         $this->cms_db->order_by("name_".$lang,"ASC");
 		//if there is a limitation data retrieve
-
 		if(!$istotal)
 		{
             $this->cms_db->limit($nrecords,$offset);
